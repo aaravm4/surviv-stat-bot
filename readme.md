@@ -30,6 +30,6 @@ Commands:
 
 This bot removes the work having to go and check stats or updates from surviv.io. You just need to type the simple commands above once you add the bot to your server.
 
-**OFFICIAL SERVER**: https://discord.gg/ZXYJH4b
+**OFFICIAL SERVER**: https://discord.gg/xhuJ5me
 
 ** means you need to permission to run these commands
