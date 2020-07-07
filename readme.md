@@ -1,7 +1,5 @@
 # Surviv io Stat Bot 
 
-Sorry surviv discord users, but this bot had been discontinued. I have not been able to find proper free hosting. I have seen that 10 serveres have already downloaded it. I'm sorry that you won't be able to use it anymore. Thanks, Aarav.
-
 The **Surviv io Stat Bot** is an easy to use discord bot written in `discord.py-rewrite` and was created by **AaravM4#9558**.
 > [INVITE URL](https://discordapp.com/api/oauth2/authorize?client_id=655541871006842891&permissions=0&scope=bot)
 
@@ -23,15 +21,11 @@ Commands:
 
 `s!change_pref new_pref`: Changes the prefix from `s!` to something. **
 
-`s!config channel` or `s!config channel1, channel2, channel3`: Configures the Bot to run only in ceratin channels **
-
 `s!issue issue`: Logs an issue in surviv.io stat bot
 
 `s!suggest suggestion`: Logs a suggestion in surviv.io stats bot
 
 `s!twitch`: Gets A list of the current twitch streamers
-
-`s!link_gen`: Gives a party link (takes about 5 seconds)
 
 
 This bot removes the work having to go and check stats or updates from surviv.io. You just need to type the simple commands above once you add the bot to your server.
