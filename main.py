@@ -81,7 +81,7 @@ for file in os.listdir('./cogs'):
       if file not in dont_load:
         bot.load_extension(f'cogs.{file[:-3]}')
 
-bot.run('NjU1NTQxODcxMDA2ODQyODkx.XwXC5Q.uxoR2mM-voDdWzjupSb6qb67FaE')
+bot.run('')
 
 
 ### 
