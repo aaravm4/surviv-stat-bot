@@ -6,6 +6,7 @@ from discord.ext import commands
 import os
 import aiosqlite
 
+# added vote command
 async def get_pref(bot, msg):
   name = msg.guild.id
   conn = await aiosqlite.connect('servers.db')
@@ -80,7 +81,7 @@ for file in os.listdir('./cogs'):
         bot.load_extension(f'cogs.{file[:-3]}')
 
     
-bot.run('NjU1NTQxODcxMDA2ODQyODkx.XwSdDg.byq8kSKiccNpjtXaRf9xgdHptm4')
+bot.run('NjU1NTQxODcxMDA2ODQyODkx.XwT0lA.Dhibi35lqra7zrh-TMAOfmBbZko')
 
 
 ### 

@@ -1,5 +1,4 @@
 # Surviv io Stat Bot 
-
 The **Surviv io Stat Bot** is an easy to use discord bot written in `discord.py-rewrite` and was created by **AaravM4#9558**.
 > [INVITE URL](https://discordapp.com/api/oauth2/authorize?client_id=655541871006842891&permissions=0&scope=bot)
 
@@ -30,6 +29,6 @@ Commands:
 
 This bot removes the work having to go and check stats or updates from surviv.io. You just need to type the simple commands above once you add the bot to your server.
 
-**OFFICIAL SERVER**: https://discord.gg/xhuJ5me
+**OFFICIAL SERVER**: https://discord.gg/Ewk4YU
 
 ** means you need to permission to run these commands
