@@ -83,7 +83,3 @@ for file in os.listdir('./cogs'):
 
 bot.run('')
 
-
-### 
-#| Add Link Gen Command
-###
