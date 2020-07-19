@@ -5,6 +5,7 @@ import discord
 from discord.ext import commands
 import os
 import aiosqlite
+import json
 
 # added vote command
 async def get_pref(bot, msg):
@@ -73,11 +74,14 @@ async def on_guild_remove(guild):
 
 
   
-dont_load = []
+dont_load = ['match.py']
 # Loading All Cogs
 for file in os.listdir('./cogs'):
     if file.endswith('.py'):
       if file not in dont_load:
         bot.load_extension(f'cogs.{file[:-3]}')
 
-bot.run('')
+# Grabbing token
+token = json.load(open('token.json', 'r'))['bot_token']
+
+bot.run(token)
