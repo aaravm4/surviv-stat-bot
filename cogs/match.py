@@ -1,0 +1,1 @@
+# Matches Cog# Status: starting rnfrom discord.ext import commandsimport discordclass Match(commands.Cog):    def __init__(self, bot):        self.bot = bot        self.args = [1, 2]        self.name = 'Match History'        self.msg = '**Example**: `s!matches obsidian_mb 5`'        
