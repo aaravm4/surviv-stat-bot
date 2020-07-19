@@ -5,7 +5,7 @@ import discord
 from discord.ext import commands
 import os
 import aiosqlite
-
+import json
 
 # added vote command
 async def get_pref(bot, msg):
@@ -47,7 +47,7 @@ async def on_ready():
     if old not in current_servers:
       await c.execute('delete from servers where name = ?', [str(old)])
       await conn.commit()
-  game = discord.Game("Type s!help")
+  game = discord.Game(f"s!help on {len(bot.guilds)} servers!")
   await bot.change_presence(activity=game)
   
 
