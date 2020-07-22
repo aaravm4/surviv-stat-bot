@@ -74,7 +74,7 @@ async def on_guild_remove(guild):
 
 
   
-dont_load = ['match.py']
+dont_load = ['playerutils.py']
 # Loading All Cogs
 for file in os.listdir('./cogs'):
     if file.endswith('.py'):
