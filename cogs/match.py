@@ -6,7 +6,7 @@ import discord
 import aiosqlite
 import aiohttp
 import clipboard
-
+ 
 
 class Match(commands.Cog):
     def __init__(self, bot):
@@ -35,6 +35,7 @@ class Match(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print("Match History Cog Loaded")
+    
 
     @commands.command(aliases=["matches", "match_history"])
     async def match(self, ctx):
@@ -55,11 +56,14 @@ class Match(commands.Cog):
         else:
             player_name = args[1]
             last_ngames = int(args[2]) if len(args) > 2 else 10
+            # Need to make it so that can grab all the games
             if last_ngames < 0:
                 await ctx.send("I can't retrieve a negative amount of games")
             else:
                 lowered = player_name.lower()
                 offset = ((last_ngames - 1) // 10) * 10
+                previous_offsets = [i for i in range(0, offset) if not i % 10]
+                await ctx.send(previous_offsets)
                 await ctx.send(offset)
                 data = {
                     "slug": f"{lowered}",
@@ -95,11 +99,11 @@ class Match(commands.Cog):
                         time_alive = divmod(int(game["time_alive"]), 60)
                         rank = game["rank"]
                         kills = game["kills"]
+                        desc = ''
                         title = f"{player_name}'s Last __{last_ngames}__ games"
-                        desc = f"stuff"
                         embed = discord.Embed(title=title, description=desc)
                         await ctx.send(embed=embed)
-
+                  
 
 def setup(bot):
     bot.add_cog(Match(bot))
